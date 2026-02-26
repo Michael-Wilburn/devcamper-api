@@ -27,7 +27,7 @@ temp/
 # Environment variables / secrets (do NOT commit .env files)
 .env
 .env.*
-config.env
+config/config.env
 config/config.env
 config/*.env
 
