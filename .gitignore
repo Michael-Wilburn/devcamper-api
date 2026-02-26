@@ -28,7 +28,6 @@ temp/
 .env
 .env.*
 config/config.env
-config/config.env
 config/*.env
 
 # Uploaded files and user-generated content
