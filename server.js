@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
+import logger from "./middleware/logger.js";
 
 // Load env vars
 dotenv.config({ path: "./config/config.env" });
@@ -11,6 +12,9 @@ const PORT = process.env.PORT || 3000;
 const ENV = process.env.NODE_ENV || "development";
 
 const app = express();
+
+// Middelware logger
+app.use(logger);
 
 // Middleware para JSON (reemplaza body-parser)
 app.use(express.json());
